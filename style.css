@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{ padding: 0;
+   margin: 0;
+   box-sizing: border-box ;
+
+}
+body{
+    font-family: 'Playfair Display', serif;
+   background-image: url("T2.gif");
+   background-color: rgb(129, 125, 125);
+    background-repeat: no-repeat;
+    color: rgb(10, 10, 10);
+   background-size:cover;
+   
+
+}
+
+.container{
+    background-color: rgb(255, 255, 255, 0.3);
+    width: 60%;
+    margin: auto;
+    
+}
+
+
+.navv{
+
+   
+   justify-content:space-around ;
+   flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+    padding: 10px;
+    display: list-item;
+    align-items: center;
+
+
+}
+.navv h2{
+    font-size: 2rem ;
+    align-items: center;
+    text-align: center;
+}
+ 
+.add-input{
+  
+    width: 550px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.add-input input{ 
+    background-color: rgba(255, 255, 255, 0.6);
+    width:80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid rgb(245, 245, 245);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   -webkit-transition: all 0.30s ease-in-out;
+   -moz-transition: all 0.30s ease-in-out;
+   -ms-transition: all 0.30s ease-in-out;
+   -o-transition: all 0.30s ease-in-out;
+   transition: all 0.30s ease-in-out;
+  
+}
+
+.add-input input:focus{
+    box-shadow: 0 0 5px #b7bdc9 ;
+    border: 1px solid  #d6dce7  ;
+
+}
+
+.add-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: rgb(201, 201, 202);
+    border: 1px solid whitesmoke;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius: 5px;
+}
+.add-input button:hover{
+    background-color: transparent;
+  font-weight: bold;
+  background-color: rgb(171, 176, 187);
+}
+
+
+.to-do-items{
+    width: 500px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+   
+   
+
+}
+
+.item{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+   -moz-transition: all 0.30s ease-in-out;
+   -ms-transition: all 0.30s ease-in-out;
+   -o-transition: all 0.30s ease-in-out;
+   transition: all 0.30s ease-in-out;
+  
+}
+
+.item:hover{
+    box-shadow: 0 0 30px #bac2dd;
+    border: 2px solid #bac2dd;
+
+}
+ 
+.item i{
+
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media ( max-width: 768px){
+    .navv{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navv h2{
+        margin: 10px 0;
+    }
+    .add-input{
+        width: 100%;
+    }
+    .to-do-items{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+
+    .add-input input{
+        width: 74%;
+    }
+}
+
+@media (max-width: 320px){
+
+    .add-input input { 
+        width: 60%;
+    }
+}
